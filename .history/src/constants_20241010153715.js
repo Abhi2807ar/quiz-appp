@@ -1,0 +1,91 @@
+export const jsQuizz = {
+    questions: [
+      {
+        question:
+          "Which of the following is used in React.js to increase performance?",
+        choices: [
+          "Virtual DOM",
+          "Original DOM",
+          "Both A and B",
+          "None of the above",
+        ],
+        type: "MCQs",
+        correctAnswer: "Virtual DOM",
+      },
+      {
+        question: "Which of the following is not an operating system?",
+        choices: [
+          "Windows",
+          "Linux",
+          "Oracle",
+          "DOS",
+        ],
+        type: "MCQs",
+        correctAnswer: "User Interface framework",
+      },
+      {
+        question:
+          " What is the decimal equivalent of the binary number 10111?",
+        choices: ["21", "39", "42", "23"],
+        type: "MCQs",
+        correctAnswer: "23",
+      },
+      {
+        question: "In which language is React.js written?",
+        choices: ["Python", "Java", "C#", "JavaScript"],
+        type: "MCQs",
+        correctAnswer: "JavaScript",
+      },
+      {
+        question: "A process is a?",
+        choices: [
+          "single thread of execution",
+           "program in the execution",
+           "program in the memory",
+           "task"
+        ],
+        type: "MCQs",
+        correctAnswer: "program in the execution",
+      },
+      {
+        question: "In which language is React.js written?",
+        choices: ["Python", "Java", "C#", "JavaScript"],
+        type: "MCQs",
+        correctAnswer: "JavaScript",
+      },
+      {
+        question: "In which language is React.js written?",
+        choices: ["Python", "Java", "C#", "JavaScript"],
+        type: "MCQs",
+        correctAnswer: "JavaScript",
+      },
+      {
+        question: "In which language is React.js written?",
+        choices: ["Python", "Java", "C#", "JavaScript"],
+        type: "MCQs",
+        correctAnswer: "JavaScript",
+      },
+      {
+        question: "In which language is React.js written?",
+        choices: ["Python", "Java", "C#", "JavaScript"],
+        type: "MCQs",
+        correctAnswer: "JavaScript",
+      },
+      {
+        question: "The synchronous modems are more costly than the asynchronous modems because ?",
+        choices: ["Pthey produce large volume of data ", 
+          "they contain clock recovery circuits ", 
+          "	they transmit the data with stop and start bits.",
+           "JavaScript"
+          ],
+        type: "MCQs",
+        correctAnswer: "they contain clock recovery circuits",
+      },
+    ],
+  };
+
+  export const resultInitalState={
+    score:0,
+    correctAnswers:0,
+    wrongAnswers:0
+  };

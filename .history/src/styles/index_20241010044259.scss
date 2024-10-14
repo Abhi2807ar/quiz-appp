@@ -1,0 +1,28 @@
+@import "./vars.scss";
+
+body {
+    font-family: 'Monospace', sans-serif; /* Use a fallback for better cross-browser support */
+    background: linear-gradient(135deg, $primary 0%, $accent 100%); /* Adjusted gradient for a smoother diagonal flow */
+    color: $foreground;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically center content */
+    margin: 0;
+    padding: 0 30px;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Avoid scrollbars */
+
+    /* Add smooth transitions and hover effects */
+    transition: background 0.3s ease, color 0.3s ease;
+
+    /* Responsive improvement for smaller screens */
+    @media (max-width: 768px) {
+        padding: 0 20px; /* Reduce padding on small screens */
+        font-size: 14px; /* Adjust font size for readability */
+    }
+
+    /* Optional hover effect for a more dynamic feel */
+    &:hover {
+        background: linear-gradient(135deg, lighten($primary, 10%) 0%, lighten($accent, 10%) 100%);
+    }
+}

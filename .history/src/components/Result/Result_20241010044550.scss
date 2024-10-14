@@ -1,0 +1,87 @@
+@import "../../styles/vars.scss";
+
+.result {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    h3 {
+        font-size: 24px;
+        letter-spacing: 1.4px;
+        margin-bottom: 20px;
+        color: $primary;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: darken($primary, 10%);
+        }
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        line-height: 1.5;
+
+        span {
+            color: $primary;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    }
+
+    table {
+        width: 80%; /* Slightly wider for better visual balance */
+        margin: 40px auto 20px;
+        border-collapse: collapse;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: $primary;
+            color: #fff;
+            font-weight: 600;
+            text-align: left;
+            border-bottom: 2px solid darken($primary, 10%);
+        }
+
+        td {
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+    }
+
+    /* Add a responsive design tweak for smaller screens */
+    @media (max-width: 768px) {
+        table {
+            width: 100%;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+}

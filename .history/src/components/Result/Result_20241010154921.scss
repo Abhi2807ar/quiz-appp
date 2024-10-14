@@ -1,0 +1,109 @@
+@import "../../styles/vars.scss";
+
+.result {
+    text-align: center;
+    padding: 20px; /* Added padding for inner spacing */
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    h3 {
+        font-size: 24px;
+        letter-spacing: 1.4px;
+        margin-bottom: 20px;
+        color: $primary;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: darken($primary, 10%);
+        }
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        line-height: 1.5;
+
+        span {
+            color: $primary;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    }
+
+    input {
+        width: 80%; /* Set input width for consistency */
+        padding: 10px;
+        border: 1px solid $disabled;
+        border-radius: 5px;
+        margin: 10px 0; /* Add margin for spacing */
+        font-size: 16px;
+        outline: none;
+
+        &:focus {
+            border-color: $primary; /* Change border color on focus */
+            box-shadow: 0 0 5px rgba($primary, 0.5);
+        }
+    }
+
+    button {
+        background: linear-gradient(90deg, $primary 0%, $accent 100%);
+        border-radius: 9px;
+        font-size: 18px;
+        color: $bg;
+        padding: 10px 42px;
+        outline: none;
+        border: none;
+        margin-top: 15px;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.2s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &:disabled {
+            background: $bg-accent;
+            color: $disabled;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+    }
+
+    table {
+        width: 80%;
+        margin: 40px auto 20px;
+        border-collapse: collapse;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        max-height: 200px; /* Set a max height for the table */
+        overflow-y: auto; /* Enable vertical scrolling */
+        display: block; /* Makes the table scrollable */
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: $primary;
+            color: #fff;
+            font-weight: 600;
+            border-bottom: 2px solid darken($primary, 10%);
+        }
+
+        td {
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+    }
+}
